@@ -1,0 +1,6 @@
+[package]
+name = "byte_utils"
+version = "0.2.0"
+edition = "2024"
+
+[dependencies]
