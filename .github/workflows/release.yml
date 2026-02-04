@@ -30,7 +30,7 @@ jobs:
         working-directory: ${{ env.CRATE_NAME }}
         run: |
           CRATE_TOML_VERSION=$(grep "^version =" Cargo.toml | cut -d'"' -f2)
-          echo CRATE_TOML_VERSION
+          echo $CRATE_TOML_VERSION
           [[ $CRATE_TOML_VERSION == $CRATE_VERSION ]]
 
       - name: Publish
